@@ -14,7 +14,7 @@ response.json().then((data)=>{
     if(data.error){
         messageOne.textContent=data.error
         messagetwo.textContent=''
-        console.log(data.error)
+        console.log(data.error) 
     }else{
         messageOne.textContent=data.Place
         messagetwo.textContent=data.forecast
