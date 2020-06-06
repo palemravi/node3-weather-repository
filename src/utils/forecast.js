@@ -13,7 +13,7 @@ const forecast = (longitute,latitude, callback) => {
         } else {
             console.log(url)
             callback(undefined, 
-                'In ' + body.location.name+' Its currently '+body.current.weather_descriptions[0]+' It is currently'+ body.current.temperature+ ' and it feels like ' +body.current.feelslike
+                'In ' + body.location.name+' Its currently '+body.current.weather_descriptions[0]+' It is currently'+ body.current.temperature+ ' and it feels like ' +body.current.feelslike+' Humidity is '+body.current.humidity + '. Observed at '+ body.current.observation_time+ '.'
                 )
     }
 })
